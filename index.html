@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/salonhub.png" type="image/gif" sizes="HeightxWidth|any">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SALON HUB</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="./font/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./css/mdb.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <style>
+
+        .intro-2 {
+            background: #3A7070;
+        }
+        .top-nav-collapse {
+            background-color: #3f51b5 !important;
+        }
+        @media (max-width: 768px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #3f51b5 !important;
+            }
+        }
+
+        .card {
+            background-color: rgba(229, 228, 255, 0.2);
+            /*background-color: white;*/
+        }
+        .md-form label {
+            color: #ffffff;
+        }
+        h6 {
+            line-height: 1.7;
+        }
+        
+        html,
+        body,
+        header,
+        .view {
+          height: 100%;
+        }
+
+        @media (min-width: 560px) and (max-width: 740px) {
+          html,
+          body,
+          header,
+          .view {
+            height: 650px;
+          }
+        }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+          html,
+          body,
+          header,
+          .view  {
+            height: 650px;
+          }
+        }
+
+        .card {
+            margin-top: 30px;
+            /*margin-bottom: -45px;*/
+
+        }
+        .md-form input[type=text]:focus:not([readonly]),
+        .md-form input[type=password]:focus:not([readonly]) {
+            border-bottom: 1px solid #8EDEF8;
+            box-shadow: 0 1px 0 0 #8EDEF8;
+        }
+        .md-form input[type=text]:focus:not([readonly])+label,
+        .md-form input[type=password]:focus:not([readonly])+label {
+            color: white;
+        }
+
+        .md-form .form-control {
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+
+<body class="">
+    <header>
+        <section class="view intro-2 ">
+          <div class="  h-100 d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5">
+                        <div class="card wow fadeIn" data-wow-delay="0.3s">
+                            <div class="card-body">
+                                <center><img src="assets/salonhub.png" class="img-fluid flex-center mt-2" style="border-radius: 100%;" width="180px"></center>
+                                <div class="md-form white-text">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="username" class="form-control">
+                                    <label for="username">Username</label>
+                                </div>
+                                <div class="md-form white-text">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="password" id="password" class="form-control">
+                                    <label for="password">Password</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <a class="btn primarys-color btn-lg" href="./pages/dashboard.html">Sign in</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </section>
+
+    </header>
+    <!--Main Navigation-->
+
+
+    <!--  SCRIPTS  -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <script>
+        $('.mdb-select').material_select();
+        new WOW().init();
+    </script>
+</body>
+</html>

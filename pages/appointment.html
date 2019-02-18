@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SALON HUB</title>
+    <link rel="icon" href="../assets/salonhub.png" type="image/gif" sizes="HeightxWidth|any">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" media="screen, projection">
+    <link rel="stylesheet" type="text/css" href="../css/mdb.min.css" media="screen, projection">
+    <link rel="stylesheet" type="text/css" href="../font/fontawesome-free-5.0.9/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/sample-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../js/sweetalert-master/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../js/sweetalert-master/themes/google/google.css">
+
+</head>
+
+<body class="fixed-sn dark-skin" data-gr-c-s-loaded="true">
+    <header>
+        <div id="slide-out" class="side-nav fixed side-nav" style="transform: translateX(0%); color: teal darken-1">
+            <ul class="custom-scrollbar">
+                <li><br>
+                    <center>
+                        <img src="../assets/salonhub.png" class="img-fluid flex-center mt-2" style="border-radius: 50%;" width="100px">
+                        <h5 class="font-weight-light mt-2 mb-0 pb-0 white-text"><strong class="">Administrator</strong></h5>
+                    </center>
+                </li>
+                <li><br>
+                <ul class="collapsible collapsible-accordion">
+                   <li><a href="dashboard.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-home"></i> Dashboard</a></li>
+                   <li><a href="appointment.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-tasks"></i>Appointments</a>
+                    <li><a href="category.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-tags" aria-hidden="true"></i></i>Service Category</a>
+                    <li><a href="service.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-inbox" aria-hidden="true"></i></i>Services</a>
+                    <li><a href="customer.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-users" aria-hidden="true"></i></i>Customers</a>
+                    <li><a href="timeslot.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-calendar"></i>Timeslot</a>
+                    <li><a href="../index.html" class="collapsible-header waves-effect arrow-r"><i class="fa fa-sign-out-alt"></i>Sign Out</a>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        <nav class="navbar nav-primary fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse white-text"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="breadcrumb-dn mr-auto white-text">
+                <p class="">S A L O N H U B</p>
+            </div>
+        </nav>
+    </header>
+
+<main class="">
+    <h1>APPOINTMENTS</h1><br>
+    <div class="card card-cascade ">
+        <div class="classic-tabs view view-cascade card-header teal darken-1 ">
+            <ul class="nav tabs nav-justified" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-monospace" data-toggle="tab" href="#panel5" role="tab">Upcoming Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panel6" role="tab">Completed Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">Cancelled Appointments</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body card-body-cascade text-center">
+            <div class="tab-content">
+                <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+                    <h4 class="font-weight-light text-left m-0 text-monospace">Upcoming Appointments</h4>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">User ID</th>
+                                    <th scope="col">Customer Name</th>    
+                                    <th scope="col">Scheduled On</th>
+                                    <th scope="col">Service Name</th>
+                                    <th scope="col">Created At</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="emp_tbldata">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirley Anciro</td>
+                                    <td>2018-11-13 09:00:00</td>
+                                    <td>Hair Cut</td>
+                                    <td>2018-11-10 09:00:00 </td>
+                                    <td><button type="button" class="btn btn-green px-3"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirley Anciro</td>
+                                    <td>2018-11-13 09:00:00</td>
+                                    <td>Hair Cut</td>
+                                    <td>2018-11-10 09:00:00 </td>
+                                    <td><button type="button" class="btn btn-green px-3"><i class="fa fa-check" aria-hidden="true"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade in show" id="panel6" role="tabpanel">
+                    <h4 class="font-weight-light text-left m-0 text-monospace">Completed Appointments</h4>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">User ID</th>
+                                    <th scope="col">Customer Name</th>  
+                                    <th scope="col">Scheduled On</th>
+                                    <th scope="col">Service Name</th>
+                                    <th scope="col">Created At</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="emp_tbldata_inactive">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirley Anciro</td>
+                                    <td>2018-11-13 09:00:00</td>
+                                    <td>Hair Cut</td>
+                                    <td>2018-11-10 09:00:00 </td>
+                                    <td><button type="button" class="btn btn-red px-3"><i class="fa fa-archive" aria-hidden="true"></i></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirley Anciro</td>
+                                    <td>2018-11-13 09:00:00</td>
+                                    <td>Hair Cut</td>
+                                    <td>2018-11-10 09:00:00 </td>
+                                    <td><button type="button" class="btn btn-red px-3"><i class="fa fa-archive" aria-hidden="true"></i></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="panel7" role="tabpanel">
+                    <h4 class="font-weight-light text-left m-0 text-monospace">Cancelled Appointments</h4>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">User ID</th>
+                                    <th scope="col">Customer Name</th>  
+                                    <th scope="col">Scheduled On</th>
+                                    <th scope="col">Service Name</th>
+                                    <th scope="col">Created At</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="emp_tbldata_inactive">
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirley Anciro</td>
+                                    <td>2018-11-13 09:00:00</td>
+                                    <td>Hair Cut</td>
+                                    <td>2018-11-10 09:00:00 </td>
+                                    <td><button type="button" class="btn btn-red px-3"><i class="fa fa-archive" aria-hidden="true"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Shirley Anciro</td>
+                                    <td>2018-11-13 09:00:00</td>
+                                    <td>Hair Cut</td>
+                                    <td>2018-11-10 09:00:00 </td>
+                                    <td><button type="button" class="btn btn-red px-3"><i class="fa fa-archive" aria-hidden="true"></i></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!--/Main layout-->
+
+<!--Footer-->
+<script src="../js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<script type="text/javascript" src="../js/sweetalert-master/dist/sweetalert.min.js"></script>
+<script src="../js/func.js"></script>
+
+<script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+        $('.mdb-select').material_select();
+        new WOW().init();
+
+    </script>
+    <script>
+        upcommingAppt();
+    </script>
+
+</body>
+
+</html>
